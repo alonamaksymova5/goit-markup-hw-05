@@ -648,13 +648,12 @@ footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover {
-    background-color: #404bbf;
-}
-
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -709,6 +708,10 @@ footer {
     margin-bottom: 16px;
 }
 
+.checkbox {
+    margin-bottom: 24px;
+}
+
 .modal-field-icon {
     fill: #2e2f42;
     position: absolute;
@@ -740,7 +743,7 @@ footer {
 }
 
 .icon-close {
-    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check {
@@ -752,9 +755,9 @@ footer {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
     align-items: center;
     margin-bottom: 24px;
+    display: flex;
 }
 
 .half-check-text {
