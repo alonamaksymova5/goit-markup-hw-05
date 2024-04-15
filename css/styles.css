@@ -540,6 +540,10 @@ footer {
     gap: 24px;
 }
 
+.footer-subscribe {
+
+}
+
 .subscribe-input {
     border: 1px solid #fff;
     border-radius: 4px;
@@ -548,6 +552,10 @@ footer {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
     padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 
 .subscribe-input::placeholder {
@@ -555,12 +563,13 @@ footer {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .sub-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -568,10 +577,11 @@ footer {
     color: #fff;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background: #4d5ae5;
     border: none;
+    cursor: pointer;
 }
 
 .sub-btn:focus {
@@ -594,6 +604,7 @@ footer {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -613,29 +624,37 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
     position: absolute;
     border-radius: 4px;
     border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
-    border-radius: 100%;
-    fill: #e7e9fc;
+    border-radius: 50%;
+    background-color: #e7e9fc;
     stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
     margin-left: auto;
     top: 24px;
     right: 24px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover {
-    background-color: #404BBF;
+    background-color: #404bbf;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: #ffffff;
 }
 
 .modal-title {
@@ -675,6 +694,7 @@ footer {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    line-height: 1.17;
 }
 
 .modal-input-wrap {
@@ -685,10 +705,14 @@ footer {
     margin-bottom: 8px;
 }
 
+.field-comment {
+    margin-bottom: 16px;
+}
+
 .modal-field-icon {
     fill: #2e2f42;
     position: absolute;
-    left: 19px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -697,7 +721,7 @@ footer {
 .modal-text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -725,7 +749,7 @@ footer {
 .check-text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: flex;
@@ -737,7 +761,16 @@ footer {
     line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
+}
+
+.text-policy {
     color: #4d5ae5;
+}
+
+.check-fake {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    fill: transparent;
 }
 
 .check-text .check-fake {
@@ -753,6 +786,7 @@ footer {
 .modal-check:checked + .check-text .check-fake {
     background-color: #404BBF;
     border: none;
+    fill: #F4F4FD;
 }
 
 .check-mark {
