@@ -522,6 +522,67 @@ footer {
     fill: #f4f4fd;
 }
 
+.name-sub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.subscribe-box {
+    margin-left: 80px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding: 8px 16px;
+}
+
+.subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.sub-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    border: none;
+}
+
+.sub-btn:focus {
+    background-color: #404BBF;
+}
+
+.fly-icon {
+    margin-left: 16px;
+}
+
+
 /* Modal window */
 
 .backdrop {
@@ -669,6 +730,7 @@ footer {
     color: #8e8f99;
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .half-check-text {
@@ -721,8 +783,4 @@ footer {
 .send-btn:focus {
     background-color: #404bbf;
 }
-
-
-
-/* Footer communication */
 
