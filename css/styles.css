@@ -757,7 +757,6 @@ footer {
     color: #8e8f99;
     align-items: center;
     margin-bottom: 24px;
-    display: flex;
 }
 
 .half-check-text {
@@ -781,7 +780,6 @@ footer {
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
